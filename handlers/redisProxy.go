@@ -64,9 +64,7 @@ func parseAndValidateRESPRequest(reader *bufio.Reader) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	var (
-		vals []string
-	)
+	var vals []string
 	// expecting an array ('*') of length 2 in the request
 	if c == '*' {
 		// next value is the length of the array
