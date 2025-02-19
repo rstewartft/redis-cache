@@ -213,7 +213,7 @@ func (s *redisTestSuite) TestLRUCacheParams() {
 	}
 }
 
-// TestInRedisButNotLRUCache tests the case where the key is in redis but not in the LRU cache
+// TestRESP tests getting values from the cache using the RESP protocol
 func (s *redisTestSuite) TestRESP() {
 	testCases := []struct {
 		name          string
